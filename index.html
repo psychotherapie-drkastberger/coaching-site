@@ -35,12 +35,11 @@
     form input, form textarea { font: inherit; }
     .badges { display:flex; gap:10px; flex-wrap:wrap; }
     .badge { background:#f6e6ee; color:#7a0f3a; padding:.3rem .6rem; border-radius:999px; font-size:.82rem; font-weight:700; }
-    .cta-img { position:relative; padding:0; margin:0; }
-    .cta-overlay { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; color:#fff; background:linear-gradient(90deg, rgba(0,0,0,.45), rgba(0,0,0,.1)); padding:24px; }
-    .cta-overlay h2 { color:#fff; margin:0 0 8px; }
-    .cta-overlay p { max-width:700px; margin:0 0 16px; }
-    .thumb { border-radius:14px; overflow:hidden; display:block; border:1px solid #f0d6e2; }
-    .thumb img { display:block; width:100%; height:auto; border-radius:14px; }
+
+    /* Kleine Motivations-Kachel (statt Vollbild-Overlay) */
+    .motivation { background:var(--light); }
+    .motivation-wrap { display:flex; flex-direction:column; align-items:center; gap:14px; text-align:center; }
+    .motivation img { max-width: 220px; width: 35vw; height:auto; border-radius:14px; border:1px solid #f0d6e2; }
   </style>
 </head>
 <body>
@@ -65,7 +64,7 @@
         </div>
 
         <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:12px;">
-          <a class="btn" href="#kontakt">Kostenloses Erstgespräch</a>
+          <a class="btn" href="mailto:birgit.kastberger@gmail.com?subject=Erstgespr%C3%A4ch%20Gl%C3%BCckscoaching">Kostenloses Erstgespräch</a>
           <a class="btn secondary" href="#angebote">Pakete &amp; Preise</a>
         </div>
       </div>
@@ -141,7 +140,7 @@
             <li class="price">90 Minuten – 350&nbsp;€*</li>
             <li class="price">60 Minuten – 250&nbsp;€*</li>
           </ul>
-          <p class="muted small">Enthalten: Kurz-Vorbereitung, Übungen/Impulse, kurze Nachbereitung per Mail.</p>
+          <p class="muted small">Inkl. Materialien &amp; E-Mail-Support.</p>
         </div>
 
         <div class="card">
@@ -151,7 +150,7 @@
             <li>5 Sitzungen à 50 Min</li>
             <li class="price">Gesamt: 1.490&nbsp;€*</li>
           </ul>
-          <p class="muted small">Inkl. Materialien, E-Mail-Support, 1 Follow-up (15 Min).</p>
+          <p class="muted small">Inkl. Materialien &amp; E-Mail-Support.</p>
         </div>
 
         <div class="card">
@@ -161,7 +160,7 @@
             <li>11 Sitzungen à 50 Min</li>
             <li class="price">Gesamt: 2.650&nbsp;€*</li>
           </ul>
-          <p class="muted small">Inkl. Materialien, Fortschritts-Tracking, Transferaufgaben, 2 Follow-ups (je 20 Min).</p>
+          <p class="muted small">Inkl. Materialien, Fortschritts-Tracking &amp; Transferaufgaben.</p>
         </div>
       </div>
 
@@ -208,7 +207,7 @@
   <section id="faq" style="background:var(--light);">
     <div class="container">
       <h2>Coaching vs. Psychotherapie</h2>
-      <p><strong>Coaching</strong> zielt auf entwicklungs- und leistungsbezogene Ziele bei psychisch stabilen Personen. <strong>Psychotherapie</strong> behandelt psychische Störungen mit Krankheitswert. Bei Bedarf empfehle ich passende therapeutische Schritte oder Kooperationen.</p>
+    <p><strong>Coaching</strong> zielt auf entwicklungs- und leistungsbezogene Ziele bei psychisch stabilen Personen. <strong>Psychotherapie</strong> behandelt psychische Störungen mit Krankheitswert. Bei Bedarf empfehle ich passende therapeutische Schritte oder Kooperationen.</p>
 
       <div class="card" style="margin-top:12px;">
         <h3>FAQ – Häufige Fragen</h3>
@@ -226,43 +225,30 @@
         </details>
         <details>
           <summary><strong>Was ist enthalten?</strong></summary>
-          <p>Materialien, Worksheets, E-Mail-Begleitung, Follow-Ups (je nach Paket).</p>
+          <p>Materialien, Worksheets &amp; E-Mail-Begleitung.</p>
         </details>
       </div>
     </div>
   </section>
 
-  <!-- 7. MOTIVATION / KONTAKT-BILD MIT CTA -->
-  <section id="motivation" class="cta-img" style="padding:0; margin:0;">
-    <img src="99277f05-f09f-4b20-bcaf-515f81266232.png" alt="Das Glück ist keine Glückssache – DI Dr. Birgit Kastberger" style="width:100%; height:auto; display:block; border-radius:0;">
-    <div class="cta-overlay">
-      <h2>DAS GLÜCK IST KEINE GLÜCKSSACHE</h2>
-      <p>Nutze verhaltenswissenschaftliche Insights und Neurowissenschaft, um Balance zu schaffen.</p>
-      <a href="mailto:birgit.kastberger@gmail.com?subject=Coaching-Anfrage" class="btn">BEGIN NOW</a>
+  <!-- 7. MOTIVATION – kleines Bild + CTA -->
+  <section id="motivation" class="motivation">
+    <div class="container motivation-wrap">
+      <img src="99277f05-f09f-4b20-bcaf-515f81266232.png" alt="Das Glück ist keine Glückssache – DI Dr. Birgit Kastberger">
+      <div>
+        <h2>DAS GLÜCK IST KEINE GLÜCKSSACHE</h2>
+        <p class="muted">Nutze verhaltenswissenschaftliche Insights und Neurowissenschaft, um Balance zu schaffen.</p>
+        <a href="mailto:birgit.kastberger@gmail.com?subject=Coaching-Anfrage" class="btn">BEGIN NOW</a>
+      </div>
     </div>
   </section>
 
-  <!-- 8. KONTAKT -->
+  <!-- 8. KONTAKT (nur E-Mail, kein Formular mehr) -->
   <section id="kontakt">
-    <div class="container grid two">
-      <div>
-        <h2>Kontakt</h2>
-        <p>Ich biete Coaching auf <strong>Deutsch, Englisch, Französisch und Italienisch</strong> an. Lass uns in einem kurzen Erstgespräch prüfen, ob und wie ich dich unterstütze.</p>
-        <p><a class="btn" href="mailto:birgit.kastberger@gmail.com?subject=Anfrage%20Gl%C3%BCckscoaching">Per E-Mail melden</a></p>
-        <p class="muted small">Oder Formular nutzen – ich antworte in der Regel innerhalb von 1–2 Werktagen.</p>
-      </div>
-      <div class="card">
-        <h3>Melde dich jetzt</h3>
-        <form action="REPLACE_WITH_FORM_ENDPOINT" method="post">
-          <label for="name">Name</label><br>
-          <input id="name" name="name" type="text" required style="width:100%; padding:10px; border-radius:8px; border:1px solid #f1d5e1;"><br><br>
-          <label for="email">E-Mail</label><br>
-          <input id="email" name="email" type="email" required style="width:100%; padding:10px; border-radius:8px; border:1px solid #f1d5e1;"><br><br>
-          <label for="msg">Worum geht es?</label><br>
-          <textarea id="msg" name="message" rows="4" placeholder="Kurz: Ziel / Thema / bevorzugte Zeiten" style="width:100%; padding:10px; border-radius:8px; border:1px solid #f1d5e1;"></textarea><br><br>
-          <button class="btn" type="submit">Absenden</button>
-        </form>
-      </div>
+    <div class="container">
+      <h2>Kontakt</h2>
+      <p>Ich biete Coaching auf <strong>Deutsch, Englisch, Französisch und Italienisch</strong> an. Lass uns in einem kurzen Erstgespräch prüfen, ob und wie ich dich unterstütze.</p>
+      <p><a class="btn" href="mailto:birgit.kastberger@gmail.com?subject=Anfrage%20Gl%C3%BCckscoaching">Per E-Mail melden</a></p>
     </div>
   </section>
 
