@@ -4,13 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Glückscoaching – DI Dr. Birgit Kastberger</title>
-  <meta name="description" content="Glückscoaching für Leistungsträger:innen mit Tiefgang – evidenzbasiertes Schema-Coaching & Verhaltenstherapie-Methoden. Klarheit, Fokus, innere Stärke. Deutsch · Englisch · Französisch · Italienisch." />
+  <meta name="description" content="Glückscoaching für Leistungsträger:innen mit Tiefgang – evidenzbasierte Routinen, Stärkentraining und Wertearbeit. Klarheit, Fokus, innere Stärke. Deutsch · Englisch · Französisch · Italienisch." />
   <style>
     :root { --accent:#c2185b; --dark:#17202a; --light:#fff6fb; --muted:#666; }
     *{box-sizing:border-box}
     body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; margin:0; color:#111; background:#fff; }
     header, section { padding: clamp(22px, 4vw, 56px) 20px; }
-    .container { max-width: 1120px; margin: 0 auto; }
+    .container { max-width: min(1400px, 96vw); margin: 0 auto; }
     .hero { background: linear-gradient(135deg,var(--light),#fff); border-bottom:1px solid #f0e0ea; }
     .kicker { letter-spacing:.08em; text-transform:uppercase; font-weight:600; color: var(--accent); }
     h1 { font-size: clamp(26px, 4.5vw, 42px); margin: 8px 0 8px; color:var(--dark); }
@@ -28,15 +28,9 @@
     .small { font-size: .92rem; }
     img { max-width:100%; height:auto; border-radius:12px; }
     .footnote { font-size:.9rem; color:var(--muted); margin-top:8px; }
-    .diagram { background:#fff; border:1px solid #f3dfe7; border-radius:12px; padding:12px; }
     .center { text-align:center; }
-    .video-wrap { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius:12px; }
-    .video-wrap iframe { position: absolute; top:0; left:0; width:100%; height:100%; border:0; }
-    form input, form textarea { font: inherit; }
     .badges { display:flex; gap:10px; flex-wrap:wrap; }
     .badge { background:#f6e6ee; color:#7a0f3a; padding:.3rem .6rem; border-radius:999px; font-size:.82rem; font-weight:700; }
-
-    /* Kleine Motivations-Kachel (statt Vollbild-Overlay) */
     .motivation { background:var(--light); }
     .motivation-wrap { display:flex; flex-direction:column; align-items:center; gap:14px; text-align:center; }
     .motivation img { max-width: 220px; width: 35vw; height:auto; border-radius:14px; border:1px solid #f0d6e2; }
@@ -54,7 +48,7 @@
 
         <p><strong>Kennst du das?</strong> Kalender voll, Kopf voller. Du leistest viel, aber innere Ruhe und Freude bleiben auf der Strecke. Mein Coaching verbindet neurowissenschaftliche Erkenntnisse mit schematherapeutischem und verhaltenstherapeutischem Handwerkszeug — praktisch, tiefgründig und auf deine Lebensrealität abgestimmt.</p>
 
-        <p><strong>Ich bin DI Dr. Birgit Kastberger:</strong> Neurowissenschaftlerin, medizinische Biochemikerin, Psychotherapeutin (VT) mit Schematherapie-, ACT- und IBT-Ausbildung. Außerdem Head of R&amp;D Projects mit über zehn Jahren Erfahrung in der Leitung interdisziplinärer Teams in flachen Hierarchien – ich bringe deshalb neben psychologischer Expertise auch Organisations- und Motivationskompetenz in das Coaching ein.</p>
+        <p><strong>Ich bin DI Dr. Birgit Kastberger:</strong> Neurowissenschaftlerin, medizinische Biochemikerin, Psychotherapeutin (VT) mit Schematherapie-, ACT- und IBT-Ausbildung. Außerdem habe ich über zehn Jahre Erfahrung in der Leitung interdisziplinärer Teams. Ich bringe psychologische Expertise <em>und</em> Organisations- sowie Motivationskompetenz in dein Coaching ein.</p>
 
         <div class="badges">
           <span class="badge">Deutsch</span>
@@ -64,7 +58,7 @@
         </div>
 
         <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:12px;">
-          <a class="btn" href="mailto:birgit.kastberger@gmail.com?subject=Erstgespr%C3%A4ch%20Gl%C3%BCckscoaching">Kostenloses Erstgespräch</a>
+          <!-- Button "Kostenloses Erstgespräch" entfernt -->
           <a class="btn secondary" href="#angebote">Pakete &amp; Preise</a>
         </div>
       </div>
@@ -80,7 +74,7 @@
     <div class="container grid two">
       <div>
         <h2>Was ist Glückscoaching – und warum ich dazu komme</h2>
-        <p>Glückscoaching ist ein zielorientierter Ansatz, der psychologische Befunde zur Steigerung von Wohlbefinden mit konkreten Umsetzungsstrategien verbindet. Ziel ist nicht „nur“ kurzfristige Stimmung, sondern ein dauerhaft stimmiges, werteorientiertes Leben mit belastbarer Resilienz.</p>
+        <p>Glückscoaching ist ein zielorientierter Ansatz, der psychologische Befunde zur Steigerung von Wohlbefinden mit konkreten Umsetzungsstrategien verbindet. Ziel ist nicht „nur“ kurzfristige Stimmung, sondern ein dauerhaft stimmiges, werteorientiertes Leben mit belastbarer Resilienz. Nachhaltiges Glück führt über <strong>Selbstliebe</strong>: einen freundlichen, akzeptierenden und verantwortungsvollen Umgang mit sich – als Basis für Klarheit, Mut und Verbundenheit.</p>
         <ul>
           <li><strong>Kognitive &amp; emotionale Routinen:</strong> Grübel- und Perfektionsmuster werden greifbar und veränderbar.</li>
           <li><strong>Verhaltensänderung:</strong> Gewohnheiten und Aktivitätsspektrum beeinflussen das Glücksniveau — trainierbar.</li>
@@ -100,20 +94,20 @@
     </div>
   </section>
 
-  <!-- 3. ÜBER MICH + THUMBNAIL-VIDEO -->
+  <!-- 3. ÜBER MICH -->
   <section id="ueber-mich">
     <div class="container grid two">
       <div>
         <h2>Über mich</h2>
 
-        <h3>Kompetenzprofil für Führungskräfte</h3>
-        <ul>
-          <li><strong>Leadership &amp; Management:</strong> Leitung interdisziplinärer Teams (bis 40 FTE) über Academia, CRO &amp; Industrie; schema-informierte Führung, Konfliktlösung, Talentförderung.</li>
-          <li><strong>Strategie &amp; Regulierung:</strong> Erfahrung von Discovery bis IND; CMC, Translation &amp; Regulatory Alignment; präzise Kommunikation auf Top-Management-Ebene.</li>
-          <li><strong>Innovation &amp; Funding:</strong> Entwicklung neuartiger RNA-/Vector-Methoden; erfolgreiche Förderungen &gt; €4M; KI-gestützte Workflows.</li>
-          <li><strong>Kommunikation &amp; Mentoring:</strong> &gt; 35 internationale Vorträge; wissenschaftliches Storytelling; Coaching in DE/EN/FR/IT.</li>
-          <li><strong>Neuro- &amp; Psychoexpertise:</strong> Psychoneuroimmunologie, Stress-/Emotionsregulation, Schematherapie – Transfer in belastbare Leistungsroutinen.</li>
-        </ul>
+        <h3>Strategie &amp; Umsetzung</h3>
+        <p>Ich begleite Menschen dabei, aus komplexen Situationen klare, machbare Schritte abzuleiten – mit Fokus auf Prioritäten, Entscheidungsqualität und gesunde Leistungsroutinen. Branchenübergreifend: Wissenschaft, Gesundheit, Tech, Beratung, Bildung, Kreativwirtschaft.</p>
+
+        <h3>Innovation &amp; Lernkultur</h3>
+        <p>Ich werde von <strong>neuen Ideen</strong> und praktischer <strong>Verbesserung</strong> angetrieben. Fortschritt entsteht, wenn wir Neugier, Feedback und Experimente zulassen. Genau das trainieren wir im Coaching: lernende Systeme, die in jedem Umfeld wirken – ob Teamführung, Selbstorganisation oder persönliche Entwicklung.</p>
+
+        <h3>Werte</h3>
+        <p>Meine wichtigsten Werte sind <strong>Lernen</strong>, <strong>Liebe</strong> und <strong>Freiheit</strong>. Lernen hält uns beweglich; Liebe verbindet und heilt; Freiheit schafft Raum, Verantwortung zu übernehmen und stimmige Entscheidungen zu treffen. Diese Werte prägen jede Intervention.</p>
 
         <p class="muted small">Ich arbeite mit Menschen, die Gestaltungsspielraum, Verantwortung und hohen Anspruch haben – evidenzbasiert, strategisch, menschlich klar.</p>
       </div>
@@ -127,8 +121,25 @@
     </div>
   </section>
 
+  <!-- 3b. PHILOSOPHIE LIEBE -->
+  <section id="philosophie" style="background:var(--light);">
+    <div class="container">
+      <h2>Philosophie: Liebe als Praxis</h2>
+      <p>Ich arbeite mit einer Liebe-basierten Coaching-Haltung: Liebe nicht als romantisches Gefühl, sondern als <strong>Handlung, Fähigkeit und bewusste Entscheidung</strong>, die Gefühle erst hervorbringt. Liebe ist ein gesellschaftsbildender Prozess und eine menschliche Urkraft – sie bedeutet Akzeptanz, Verantwortlichkeit und Würde im Handeln.</p>
+      <ul>
+        <li><strong>Liebe ist eine Tat / Tätigkeit</strong> – ein Verhalten, das Gefühle auslöst.</li>
+        <li><strong>Liebe ist eine Fähigkeit</strong> – trainierbar und entwickelbar.</li>
+        <li><strong>Liebe schafft Kultur</strong> – sie bildet Beziehungen, Teams und Gesellschaft.</li>
+        <li><strong>Jeder Mensch ist mein Trainer</strong> – wir lernen aneinander.</li>
+        <li><strong>Liebe als höchste Bewusstseinsqualität</strong> – absolute Akzeptanz statt Urteil.</li>
+        <li><strong>Liebe ist kein Luxus</strong> – sie ist ein Tor zu Überleben und geistiger Gesundheit.</li>
+      </ul>
+      <p class="muted small"><em>„Kein Paar passt perfekt zusammen. Es handelt sich um einen ständigen Anpassungsprozess. Liebe ist keine Frage des richtigen Partners, sondern eine Fähigkeit, an der man arbeiten kann und muss.“</em> — Erich Fromm, 1956</p>
+    </div>
+  </section>
+
   <!-- 4. ANGEBOT / LEISTUNGEN -->
-  <section id="angebote" style="background:var(--light);">
+  <section id="angebote">
     <div class="container">
       <h2>Angebot &amp; Leistungen</h2>
 
@@ -179,14 +190,14 @@
   </section>
 
   <!-- 5. FÜR WEN -->
-  <section id="fuer-wen">
+  <section id="fuer-wen" style="background:var(--light);">
     <div class="container grid two">
       <div>
         <h2>Für wen</h2>
-        <p>Für Erwachsene (ca. 20–70), die Verantwortung tragen — in leitender Funktion oder als Fachperson — und die Leistung mit innerer Stimmigkeit verbinden möchten:</p>
+        <p>Für Erwachsene (ca. 20–70), die Verantwortung tragen — in leitender Funktion oder als Fachperson — und die Leistung mit innerer Stimmigkeit verbinden möchten. Branchenübergreifend einsetzbar.</p>
         <ul>
           <li>Führungskräfte &amp; Team-Leads</li>
-          <li>R&amp;D, Medizin, Forschung, Tech, Beratung</li>
+          <li>R&amp;D, Medizin, Tech, Beratung, Bildung, Kreativwirtschaft</li>
           <li>Gründer:innen &amp; Selbständige</li>
           <li>Hochsensible &amp; High-Performer:innen, die Tiefe schätzen</li>
         </ul>
@@ -204,10 +215,10 @@
   </section>
 
   <!-- 6. COACHING vs. PSYCHOTHERAPIE + FAQ -->
-  <section id="faq" style="background:var(--light);">
+  <section id="faq">
     <div class="container">
       <h2>Coaching vs. Psychotherapie</h2>
-    <p><strong>Coaching</strong> zielt auf entwicklungs- und leistungsbezogene Ziele bei psychisch stabilen Personen. <strong>Psychotherapie</strong> behandelt psychische Störungen mit Krankheitswert. Bei Bedarf empfehle ich passende therapeutische Schritte oder Kooperationen.</p>
+      <p><strong>Coaching</strong> zielt auf entwicklungs- und leistungsbezogene Ziele bei psychisch stabilen Personen. <strong>Psychotherapie</strong> behandelt psychische Störungen mit Krankheitswert. Bei Bedarf empfehle ich passende therapeutische Schritte oder Kooperationen.</p>
 
       <div class="card" style="margin-top:12px;">
         <h3>FAQ – Häufige Fragen</h3>
@@ -238,16 +249,16 @@
       <div>
         <h2>DAS GLÜCK IST KEINE GLÜCKSSACHE</h2>
         <p class="muted">Nutze verhaltenswissenschaftliche Insights und Neurowissenschaft, um Balance zu schaffen.</p>
-        <a href="mailto:birgit.kastberger@gmail.com?subject=Coaching-Anfrage" class="btn">BEGIN NOW</a>
+        <a href="mailto:birgit.kastberger@gmail.com?subject=Coaching-Anfrage" class="btn">Kontakt per E-Mail</a>
       </div>
     </div>
   </section>
 
-  <!-- 8. KONTAKT (nur E-Mail, kein Formular mehr) -->
+  <!-- 8. KONTAKT -->
   <section id="kontakt">
     <div class="container">
       <h2>Kontakt</h2>
-      <p>Ich biete Coaching auf <strong>Deutsch, Englisch, Französisch und Italienisch</strong> an. Lass uns in einem kurzen Erstgespräch prüfen, ob und wie ich dich unterstütze.</p>
+      <p>Ich biete Coaching auf <strong>Deutsch, Englisch, Französisch und Italienisch</strong> an. Schreib mir gern kurz dein Anliegen und Wunschzeiten.</p>
       <p><a class="btn" href="mailto:birgit.kastberger@gmail.com?subject=Anfrage%20Gl%C3%BCckscoaching">Per E-Mail melden</a></p>
     </div>
   </section>
@@ -255,7 +266,7 @@
   <footer>
     <div class="container">
       <p><strong>DI Dr. Birgit Kastberger</strong> · Glückscoaching – Coaching für Leistungsträger mit Tiefgang</p>
-      <p class="small">Impressum · Datenschutz · AGB (Links einfügen)</p>
+      <!-- Impressum/Datenschutz/AGB bewusst entfernt (in Carrd enthalten) -->
     </div>
   </footer>
 </body>
